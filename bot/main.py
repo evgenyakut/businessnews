@@ -121,8 +121,8 @@ def parsing_idl():
     return
 
 # настройка расписания
-schedule.every().day.at('07:00').do(parsing_exp)
-schedule.every(2).days.at('07:30').do(parsing_idl)
+schedule.every().day.at('21:17').do(parsing_exp)
+schedule.every().days.at('21:18').do(parsing_idl)
 
 # бесконечный цикл для проверки расписания
 while True:
