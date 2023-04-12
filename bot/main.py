@@ -109,9 +109,9 @@ def parsing_idl():
                         continue
                     articles.append({"title": h2.text.strip(), "link": article_url, "datetime": dt})
 
-    # Get current date and subtract 4 days
+    # Get current date and subtract 1 days
     current_date = datetime.now()
-    delta = timedelta(days=4)
+    delta = timedelta(days=1)
     week_ago = current_date - delta
 
     # Filter articles by date
